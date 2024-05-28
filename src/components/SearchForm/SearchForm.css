@@ -1,0 +1,62 @@
+.search-form {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto; /* Center the search form horizontally */
+    padding: 0 20px; /* Add padding for responsiveness */
+  }
+  
+  .search-form-elem {
+    display: flex;
+    justify-content: space-between; /* Align input and button at the ends */
+    align-items: center;
+    padding: 1rem;
+    border-radius: 3.8rem;
+    background-color: #fff; /* Add a background color */
+  }
+  
+  .search-form-elem .form-control {
+    flex: 1; /* Make the input flexible to take available space */
+    font-size: 1.5rem; /* Adjust font size for responsiveness */
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3.8rem;
+  }
+  
+  .search-form-elem .form-control::placeholder {
+    opacity: 0.9;
+  }
+  
+  /* Style the search button */
+  .search-form-elem button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Add some space between input and button */
+  }
+  
+  /* Adjust the icon size for responsiveness */
+  .search-form-elem button svg {
+    color: #0000FF;
+    font-size: 1.8rem;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .search-form {
+        margin: 0;
+        padding: 0;
+      max-width: 70%; /* Adjust the width for smaller screens */
+    }
+    .container{
+        padding: 0;
+    }
+  
+    .search-form-elem .form-control {
+      font-size: 1.3rem; /* Decrease font size for smaller screens */
+    }
+  
+    .search-form-elem button svg {
+      font-size: 1.5rem; /* Decrease icon size for smaller screens */
+    }
+  }
+  
